@@ -29,12 +29,23 @@ ro.build.description=sdk-eng 3.0 HONEYCOMB 104254 test-keys
 ro.build.fingerprint=generic/sdk/generic:3.0/HONEYCOMB/104254:eng/test-keys
 ro.build.characteristics=default
 # end build properties
-#
-# system.prop for generic sdk 
-#
+
+#radio
 
 rild.libpath=/system/lib/libreference-ril.so
 rild.libargs=-d /dev/ttyS0
+
+#display
+
+ro.sf.widthpixels=600
+ro.sf.heightpixels=1024
+ro.sf.lcd_density.xdpi=169.3333
+ro.sf.lcd_density.ydpi=169.3333
+#ro.sf.hwrotation=270
+ro.sf.lcd_density=120
+#rolled back to opengl 1.0 for testing
+#ro.opengles.version=131072
+ro.opengles.version=65535
 
 #
 # ADDITIONAL_BUILD_PROPERTIES
