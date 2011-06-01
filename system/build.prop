@@ -21,7 +21,7 @@ ro.product.cpu.abi=armeabi
 ro.product.manufacturer=unknown
 ro.product.locale.language=ldpi
 ro.wifi.channels=
-ro.board.platform=
+ro.board.platform=s5pc110
 # ro.build.product is obsolete; use ro.product.device
 ro.build.product=generic
 # Do not try to parse ro.build.description or .fingerprint
