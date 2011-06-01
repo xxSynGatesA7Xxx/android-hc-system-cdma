@@ -8,7 +8,10 @@ rm ../hc_system_backup_old.zip
 rm -r ~/github/android-hc-system-cdma/META-INF
 rm -r ~/github/android-hc-system-cdma/system
 rm -r ~/github/android-hc-system-cdma/updates
+rm ~/github/android-hc-system-cdma/lazygit.sh
 mv hc_system_backup_old.zip ../hc_system_backup_old.zip
-cp -r ~/galaxytab/cdmabuild/android-hc-system-cdma/ ~/github/android-hc-system-cdma/
+cp -r ~/galaxytab/cdmabuild/android-hc-system-cdma/ ~/github/
+zip -r zip.zip .
+mv zip.zip ~/galaxytab/cdmabuild/android-hc-system-cdma/hc-test-"$DATE""$TIME".zip
 git add -A
 git commit
